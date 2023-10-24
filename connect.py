@@ -208,6 +208,8 @@ def player1_input():
                                     break
                                 else:
                                     print("This column is already full! Try another input.")
+        elif choice == 'quit' or choice == 'Quit':
+            quit()
         else:
             print("Invalid Input: Please try again.")
                                 
@@ -396,6 +398,8 @@ def player2_input():
                                     break
                                 else:
                                     print("This column is already full! Try another input.")
+        elif choice == 'quit' or choice == 'Quit':
+            quit()
         else:
             print("Invalid Input: Please try again!")
 
@@ -421,6 +425,7 @@ def winner(board, player):
 def convert_to_2d(board):
     return [board[i:i+7] for i in range(0, len(board), 7)]
 
+print("Type 'quit' or 'Quit' at anytime to exit the game.")
 
 while True:
     print_board(board)
